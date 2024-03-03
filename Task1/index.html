@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" type="text/css" rel="stylesheet">
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/anime.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="WhleSec">
+        <div class="dotImgSec">
+
+            <div class="HdBdy">
+                <header class="Hdsec">
+                    <div class="container">
+                        <div class="ImgSec">
+                            <img src="./assets/images/Logo.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </header>
+
+                <section class="HmeSec">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-5 pr-4">
+                                <div class="LftCont">
+                                    <div class="LftCntSec">
+                                        <h1 class="CntHdng">Lorem ipsum dolor sit amet consectetur </h1>
+                                        <p class="CntPara">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                            laboris nisi ut aliquip ex
+                                            ea commodo consequat.</p>
+                                    </div>
+                                    <div class="BtnCntr">
+                                        <button class="my_btn_style" type="button">Sign Up Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 offset-lg-1">
+                                <div class="slick-carousel">
+                                    <div>
+                                        <div class="slide-content">
+                                            <div class="BnnImg text-center">
+                                                <img src="./assets/images/hero image.svg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide-content">
+                                            <div class="BnnImg text-center">
+                                                <img src="./assets/images/hero image.svg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide-content">
+                                            <div class="BnnImg text-center">
+                                                <img src="./assets/images/hero image.svg" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="container">
+                <div class="dotImg">
+                    <img src="./assets/images/dotImg.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="FrmSec">
+            <div class="container">
+                <div class="FrmBox">
+                    <div class="FrmCntDiv">
+                        <h2 class="FrmCntHdng">Contact us</h2>
+                        <h4 class="FrmCntSubHdng">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+
+                    </div>
+                    <div class="w-100">
+                        <form class="FrmInptBox">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput2">Email</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput2"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput3">Number</label>
+                                        <input type="number" class="form-control" id="exampleFormControlInput3"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Choose a Topic</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Select One...</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            placeholder="Type your message..." rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="my_btn_style mx-auto" type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/jquery-3.6.0.min.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<script>
+    $().ready(function () {
+        $('.slick-carousel').slick({
+            arrows: false,
+            centerPadding: "0px",
+            dots: true,
+            autoplay: true,
+            slidesToShow: 1,
+            infinite: true,
+            // margin: atuo,
+            // vertical: true,
+            // verticalSwiping: true,
+            speed: 1000,
+            autoplaySpeed: 5000,
+            useTransform: true,
+            cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+        });
+    });
+</script>
+
+</html>

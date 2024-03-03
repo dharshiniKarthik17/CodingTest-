@@ -1,0 +1,361 @@
+/*=== Common Css ===*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: unset;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    resize: none;
+}
+
+/* 
+@media only screen and (min-width: 1400px) {
+    .container-1300 {
+        max-width: 1350px;
+    }
+} */
+
+/* @media only screen and (min-width: 1600px) {
+    .container-1300 {
+        max-width: 1650px;
+    }
+} */
+
+/*=== Common Css End ===*/
+
+/*=== Button css ===*/
+.btn.focus,
+.btn:focus {
+    box-shadow: unset;
+}
+
+.my_btn_style {
+    width: 133px;
+    height: 48px;
+    border-radius: 4px;
+    /* background-image: radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%), radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.413) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%); */
+    background-color: #2783F3;
+    color: #ffffff;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+    box-shadow: unset;
+    outline: unset;
+    border: none;
+}
+
+.my_btn_style:hover::before {
+    left: -100%;
+    transition: all 0.6s ease;
+}
+
+.my_btn_style::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: radial-gradient(92.09% 85.42% at 86.3% 87.5%, rgba(0, 0, 0, 0.23) 0%, rgba(0, 0, 0, 0) 86.18%), radial-gradient(65.28% 65.28% at 26.39% 20.83%, rgba(255, 255, 255, 0.413) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+    background-color: transparent;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    box-shadow: inset 0 0 20px #fff;
+}
+
+/*=== Button css End ===*/
+
+/* == Header css starts ==*/
+.Hdsec {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home page starts */
+.HdBdy {
+    background: linear-gradient(180deg, #03062F 0%, #180B74 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 80%);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 999;
+}
+
+.HmeSec {
+    padding: 35px 15px;
+    min-height: calc(100vh - 80px);
+    margin-bottom: 35px;
+    position: relative;
+    /* display: flex;
+    align-items: center; */
+}
+
+.dotImgSec {
+    position: relative;
+}
+
+.dotImg {
+    position: absolute;
+    bottom: 0%;
+}
+
+/* .HdBdy::before {
+    content: '';
+    position: absolute;
+    background: url('./../images/dotImg.png') no-repeat;
+    width: 232px;
+    height: 180px;
+        bottom: 0%;
+    z-index: -1;
+} */
+.LftCont {
+    margin-bottom: 50px;
+}
+
+.LftCntSec .CntHdng {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 53px;
+    font-style: normal;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.LftCntSec .CntPara {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+
+}
+
+.slick-dots li {
+    margin: auto;
+}
+
+.slick-dots li button {
+    font-size: 15px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.slick-dots li.slick-active button {
+    background-color: #ffffff;
+}
+
+.BnnImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BnnImg img {
+    margin-bottom: 35px;
+}
+
+.FrmSec {
+    padding: 35px 15px;
+}
+
+.FrmBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    gap: 35px;
+    max-width: 768px;
+    margin: auto;
+    /* height: 864px; */
+    background: #FFFFFF;
+    box-shadow: 0px 91px 36px rgba(0, 0, 0, 0.01), 0px 51px 31px rgba(0, 0, 0, 0.05), 0px 23px 23px rgba(0, 0, 0, 0.09), 0px 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.FrmCntHdng {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: #03062F;
+}
+
+.FrmCntSubHdng {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(3, 6, 47, 0.7);
+}
+
+.FrmInptBox label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #03062F;
+
+}
+
+.FrmInptBox .form-group {
+    margin-bottom: 20px;
+}
+
+.FrmInptBox .form-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.FrmInptBox .form-control:focus {
+    box-shadow: none;
+    border-color: #2783F3;
+}
+
+.FrmInptBox textarea {
+    min-height: 180px;
+}
+
+.FrmInptBox ::placeholder,
+.FrmInptBox select {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #505050;
+}
+
+@media only screen and (max-width: 1199px) {
+    .LftCntSec .CntHdng {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .FrmCntHdng {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .FrmBox {
+        padding: 50px 50px;
+    }
+
+    .HdBdy {
+        background: linear-gradient(180deg, #03062F 0%, #180B74 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 87% 100%, 0 83%);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .HmeSec {
+        min-height: 100%;
+    }
+
+    .LftCntSec .CntHdng {
+        font-size: 30px;
+        line-height: 42px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .LftCntSec .CntPara {
+        text-align: center;
+    }
+
+    .HdBdy {
+        background: linear-gradient(180deg, #03062F 0%, #180B74 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 92%);
+    }
+
+    .BtnCntr {
+        text-align: center;
+    }
+
+    .HmeSec {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .HdBdy {
+        clip-path: none;
+    }
+
+    .HmeSec {
+        padding: 25px 15px;
+    }
+
+    .FrmCntSubHdng {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .FrmCntHdng {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .FrmBox {
+        padding: 25px 25px;
+        margin-bottom: 0;
+    }
+
+    .LftCntSec .CntHdng {
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .FrmBox{
+        gap: 20px;
+    }
+}
